@@ -4,3 +4,7 @@
 	line-height: inherit !important;
 }
 .browser-content { margin-left:20px !important; }
+#chat .chat-container ul.chat-main li.user-56c057eaa23bb71d0001ac91  .stream-item-content .activity-row .username /* TinyandKawaii */ {
+    color: #ffa500 !important;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.5);
+}
