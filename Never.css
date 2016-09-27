@@ -13,6 +13,11 @@
     color: #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000 !important;
     text-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
+.browser-content { margin-left:20px !important; }
+#chat .chat-container ul.chat-main li.user-570cbe9621ef015e006f9c96  .stream-item-content .activity-row .username /* Theharemking */ {
+    color: #37751f !important;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.5);
+}
 #chat .chat-container ul.chat-main li.user-56d545a245f02ad6041a4317 .stream-item-content .activity-row .username:before {
     content: "\f192";
     font-family: "foundation-icons";
