@@ -18,6 +18,8 @@
 }
 #chat .chat-container ul.chat-main li.user-560a8df0b776b203001e6735 .stream-item-content .activity-row .username .user-role {
     width: calc(100% - 8.5rem);
+    position: absolute;
+    top: 1.2rem; 
 }
 .browser-content { margin-left:20px !important; }
 #chat .chat-container ul.chat-main li.user-570cbe9621ef015e006f9c96  .stream-item-content .activity-row .username /* Theharemking */ {
