@@ -7,4 +7,7 @@ Css Jagex are used as
 Css neverpause (the one i use)
 - Never.css
 
+Jagex's ccs summary
+- Jagexleague.css
+
 Css Frosolf is just for testing, can be deleted.
