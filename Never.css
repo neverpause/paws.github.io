@@ -84,7 +84,7 @@
     text-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
 #chat .chat-container ul.chat-main li.user-562fb1ae319ea12d00ebc064 .stream-item-content .activity-row .username:before {
-    content: ("http://i.imgur.com/ZHCxd31.png") ; 
+    content: url("http://i.imgur.com/ZHCxd31.png") ; 
     font-family: "foundation-icons";
     font-style: normal;
     font-weight: normal;
