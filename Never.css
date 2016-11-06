@@ -3,8 +3,9 @@
 #chat .chat-container .chat-messages .chat-main li {
 	line-height: inherit !important;
 }
+/* TinyandKawaii */
 .browser-content { margin-left:20px !important; }
-#chat .chat-container ul.chat-main li.user-56c057eaa23bb71d0001ac91  .stream-item-content .activity-row .username /* TinyandKawaii */ {
+#chat .chat-container ul.chat-main li.user-56c057eaa23bb71d0001ac91  .stream-item-content .activity-row .username {
     color: #ffa500 !important;
     text-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
@@ -21,7 +22,22 @@
     text-decoration: inherit;
     margin-right: 5px;
 }
-#chat .chat-container ul.chat-main li.user-560a8df0b776b203001e6735 .stream-item-content .activity-row .username /* laquett rainbow */ {
+#chat .chat-container ul.chat-main li.user-56d545a245f02ad6041a4317 .stream-item-content .activity-row .username:before {
+    content: "\f192";
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: 5px;
+}
+/* End tinyandkawaii */
+/* start laquett */
+#chat .chat-container ul.chat-main li.user-560a8df0b776b203001e6735 .stream-item-content .activity-row .username {
     background: linear-gradient(to right, #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000);
     -webkit-background-clip: text;
     text-shadow: 1px 1px 0 rgba(255,255,255,.25);
@@ -53,23 +69,16 @@
 #chat .chat-container ul.chat-main li.user-560a8df0b776b203001e6735.currentDJ .activity-row .username .user-role-icon {
  	left: 5.5rem;   
 }
-
+/* end laquett */
+/* Theharemking */
 .browser-content { margin-left:20px !important; }
-#chat .chat-container ul.chat-main li.user-570cbe9621ef015e006f9c96  .stream-item-content .activity-row .username /* Theharemking */ {
+#chat .chat-container ul.chat-main li.user-570cbe9621ef015e006f9c96  .stream-item-content .activity-row .username  {
     color: #37751f !important;
     text-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
-#chat .chat-container ul.chat-main li.user-56d545a245f02ad6041a4317 .stream-item-content .activity-row .username:before {
-    content: "\f192";
-    font-family: "foundation-icons";
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    text-decoration: inherit;
-    margin-right: 5px;
-}
-
+/* End of harem */
+/* Zogical */
+.browser-content { margin-left:20px !important; }
+#chat .chat-container ul.chat-main li.user-562fb1ae319ea12d00ebc064  .stream-item-content .activity-row .username  {
+    color: #EEB422 !important;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.5); 
