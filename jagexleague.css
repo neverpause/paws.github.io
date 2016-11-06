@@ -1,0 +1,803 @@
+/*=====Background=====*/
+.backstretch-item {
+    background: url(https://i.imgur.com/IPf1yWO.jpg);
+    background-size: 100% 100%;
+}
+
+.backstretch img {
+    visibility: hidden;
+}
+
+#profileMainSection{
+	background:rgba(0,0,0,0.20);
+}
+
+/*=====Header=====*/
+#header-global {
+    /* height: 6.6%; */
+    /* background: url(http://i.imgur.com/RvQ8N57.png); */
+    /* background-size: 100% 82%; */
+    /* background-repeat: no-repeat; */
+    /* padding: 0; */
+    /* padding-top: 0.3%; */
+    background: rgba(0, 0, 0, 0.25);
+}
+.header-center-logo a {
+    background: url(https://i.imgur.com/Yqf2ofE.png);
+    background-size: 100% 100%;
+}
+.header-center-logo img {
+    visibility: hidden;
+}
+#header-global .header-left-navigation {
+     background: rgba(0, 0, 0, 0.73);
+    border: 1px; 
+    border-right: 1px;
+    border-left: none;
+    border-style: solid;
+    border-radius: 13px;
+    border-color: rgba(0, 0, 0, 0.52);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.16);
+    z-index: 36;
+}
+#header-global .header-right-navigation {
+    background: black;
+    border: 1px;
+    border-left: 9px;
+    border-right: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.44);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.16);
+	z-index:500;
+}
+
+@media screen and (min-height: 41em) and (min-width: 72em){
+/*====Main Room====*/
+#main-room {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+	max-width:100%;
+}
+#main-room .main-room-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+/*====Main Room Player CSS=======*/
+@media screen and (min-height: 41em) and (min-width: 72em){
+#main-room .left_section {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+}
+#main-room .main-player-wrapper {
+    padding: 0;
+    margin: 0;
+    left: 12%;
+    top: 10%;
+    height: 46%;
+    width: 34%;
+    display: inline-block !important;
+    position: absolute !important;
+}
+/*new border handling*/
+/*top right bottom*/
+#main-room .left_section .main-player-wrapper:before {
+    content: "";
+	
+    background: url(https://i.imgur.com/J2mtgVT.png);
+    background-size: 100% 100%;
+    width: 91%;
+    height: 89.6%;
+    display: inline-block;
+    position: absolute;
+    top: 10.9%;
+    left: 9%;
+}
+#main_player {
+    padding: 0;
+    margin: 0;
+    top: 23.6%;
+    left: 8.9%;
+    position: relative;
+    width: 82.2%;
+    height: 53.8%;
+    border-radius: 0;
+    /* border: 1px; */
+    /* border-style: solid; */
+}
+/*===Player Header Options===*/
+#main_player .player_header {
+    position: absolute;
+    top: -17%;
+    left: auto;
+    right: 100%;
+    width: 30%;
+    height: 134%;
+    /* border: 1px; */
+    /* border-style: solid; */
+    /*background: url(http://i.imgur.com/zHDWaWC.png);
+    background-size: 94% 88%;
+    background-repeat: no-repeat;*/
+    /* background-position: 14% -7%; */
+}
+/*left border*/
+#main_player .player_header:after {
+    content: "";
+    background: url(https://i.imgur.com/8DbzX8h.png);
+    background-size: 100% 100%;
+    width: 34%;
+    height: 111%;
+    z-index: 0;
+    position: absolute;
+    overflow: visible;
+    top: 1%;
+    right: -0.5%;
+    display: inline-block;
+}
+#main_player .player_header span:hover {
+    background: url(https://i.imgur.com/CAVvHCN.png);
+    background-size: 100% 100%;
+    -webkit-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    -ms-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+}
+#main_player .player_header span.active {
+    color: rgb(30, 223, 232);
+    background: url(https://i.imgur.com/CAVvHCN.png);
+    background-size: 100% 100%;
+    -webkit-filter: drop-shadow(0px 0px 12px rgba(55, 113, 220, 0.83));
+    -ms-filter: drop-shadow(0px 0px 12px rgba(55, 113, 220, 0.83));
+    filter: drop-shadow(0px 0px 12px rgba(55, 113, 220, 0.83));
+}
+#main_player .player_header .skip-el,
+#main_player .player_header .displayVideo-el,
+#main_player .player_header .display-queue,
+#main_player .player_header .room-info-display,
+#main_player .player_header .display-mods-controls,
+#main_player .player_header .edit-room{
+    padding: 5% !important;
+    width: 82%;
+    position: absolute !important;
+    float: none !important;
+    right: 0;
+    margin: 0 !important;
+    background: transparent;
+    /* border: 1px; */
+    /* border-style: solid; */
+    height: 11%;
+    filter: dropshadow(0,0,0,10px);
+    /* color: transparent; */
+}
+/*player header buttons*/
+#main_player .player_header .skip-el {
+    position: absolute;
+    bottom: 14%;
+    background: url(http://i.imgur.com/6WiPjJw.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .displayVideo-el {
+    bottom: 43%;
+    background: url(http://i.imgur.com/8oTGcpA.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .display-queue {
+    bottom: 71%;
+    background: url(http://i.imgur.com/8oTGcpA.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .room-info-display {
+    bottom: 57%;
+    background: url(http://i.imgur.com/4EeJZYG.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .display-mods-controls {
+    bottom: 28%;
+    background: url(http://i.imgur.com/8oTGcpA.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .edit-room {
+    bottom: 0;
+    background: url(http://i.imgur.com/4EeJZYG.png);
+    background-size: 100% 100%;
+}
+#main_player .player_header .edit-room i {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    /* background: black; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+	/*dont need this anymore I dont think*//*
+#main_player .player_header:after {
+    content: "";
+    background: url(http://i.imgur.com/pSmfE2h.png);
+    background-size: 100% 105%;
+    background-position: 11% 2%;
+    width: 27%;
+    height: 85%;
+    display: inline-block;
+    position: absolute;
+    right: -0.2%;
+    bottom: -0.3%;
+}*/
+
+/*===Main Player Video >.<===*/
+#main_player #room-info-display, #main_player #mods-controllers {
+    display: inline-block;
+    height: 100.1%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0%;
+    position: absolute;
+    background: black;
+    z-index: 2;
+}
+#main_player .player_container {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0%;
+    position: absolute;
+    /* border: 1px; */
+    /* border-style: solid; */
+}
+#main_player .player_container:after {
+    content: "";
+	/*gold skulls*/
+    background: url(http://i.imgur.com/MDD42Fs.png);
+	/*blue skulls*/
+	background: url(https://i.imgur.com/0RrlvQE.png);
+    background-size: 100% auto;
+    width: 110.3%;
+    height: 81.2%;
+    z-index: 500;
+    position: absolute;
+    overflow: visible;
+    top: -52%;
+    left: -6%;
+    display: inline-block;
+}
+
+/*Trickery*/
+/*
+#main_player .placeholder {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: inset 0 0 4rem rgba(0, 0, 0, 0);
+    background: url(http://i.imgur.com/8E5CCox.png);
+    background-size: 100% auto;
+    display: inline-block !important;
+    z-index: 5000;
+}
+#main_player .placeholder h5{
+	visibility: hidden;
+}*/
+
+#main_player .player_sharing {
+    bottom: -13px;
+    top: 100%;
+    width: 100%;
+    height: 19%;
+    position: absolute;
+    margin: 0;
+    padding: 2%;
+    background: rgba(27, 144, 228, 0.22);
+}
+
+#main_player .play-song-link-container {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 32%;
+    top: 142%;
+    bottom: auto;
+    /*background: url(http://i.imgur.com/8E5CCox.png);
+    background-size: 100%;*/
+    /*top: 0;*/
+    /*z-index: 500;*/
+}
+#main_player .play-song-link-container .play-song-link-browser, #main_player .play-song-link-container .play-song-link {
+    margin: 0;
+    /*bottom: -512%;*/
+    padding: 2%;
+    width: 37%;
+    height: 80%;
+    border-radius: 0;
+    background: url(http://i.imgur.com/JBtIpIx.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+#main_player .play-song-link-container .play-song-link-browser {
+    margin-right: 20%;
+    margin-top: 5%;
+}
+#main_player .play-song-link-container div:hover{
+    -webkit-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    -ms-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+}
+#main_player .play-song-link-container i {
+    color: transparent !important;
+    /*background: url(http://i.imgur.com/T1Fkphz.png);
+    background-size: 100% 100%;*/
+    width: 13%;
+	width:10%;
+    height: auto;
+    position: relative;
+    padding: 5px;
+}
+#main_player .play-song-link-container i:before {
+    content: url(http://i.imgur.com/T1Fkphz.png);
+    line-height: 0.5;
+    position: absolute;
+    left: -2px;
+    top: -6px;
+}
+}
+
+@media screen and (min-height: 41em) and (min-width: 72em){
+/*===Chat Room===*/
+#main-room .right_section {
+    position: absolute;
+    width: 25%;
+    height: 81%;
+    /* bottom: 4%; */
+    top: 11.6%;
+    right: 18%;
+    /* overflow: visible; */
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    /* background: url(http://i.imgur.com/iVaobCD.png); */
+    /* background-size: 100% 100%; */
+}
+#main-room .right_section:before {
+    content: "";
+	/*blue wings*/
+	background:url("https://i.imgur.com/94J18LG.png");
+	/*red wings*/
+    /*background: url(http://i.imgur.com/iVaobCD.png);*/
+    background-size: 100% 100%;
+    width: 145.4%;
+    height: 116.6%;
+    position: absolute;
+    left: -22.4%;
+    z-index: -5;
+    top: -10.9%;
+}
+/*#chat {
+    position: absolute;
+     padding: 35px; 
+    background: rgba(0,0,0,0.5);
+    top: 9.6%;
+    left: 15.6%;
+    width: 68.8%;
+    height: 85.2%;
+}*/
+/*#chat .chat_tools {
+    background: url(http://i.imgur.com/JLrUmTR.png);
+    background-size: 100% 118%;
+    background-repeat: no-repeat;
+    z-index: 50;
+}*/
+#chat .chat_tools:before {
+    background: url(http://i.imgur.com/JLrUmTR.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 127%;
+    /* width: 100%; */
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+}
+}
+/*===Chat Stuff===*/
+#chat .chat-container .chat-messages .chat-main{
+	padding-left:1.5rem !important;
+}
+#chat .chat-container .chat-messages .chat-main li, #chat .chat-container .chat-messages .chat-main .stream-item-content, #chat .chat-container .chat-messages .chat-main .image_row {
+    overflow: visible !important;
+}
+/*===um Badges & hats===*/
+li[class~="resident-dj"] .username:before{
+	content:url("https://i.imgur.com/algQXgU.png");
+}
+li[class~="vip"] .username:before{
+	content:url("https://i.imgur.com/6Njxy4r.png");
+}
+li[class~="mod"] .username:before{
+	content:url("https://i.imgur.com/JW78ULD.png");
+}
+li[class~="manager"] .username:before{
+	content:url("https://i.imgur.com/1hdIA3U.png");
+}
+li[class~=" admin "] .username:before{
+	content:url("https://i.imgur.com/sBrbc3J.png");
+}
+li[class~="co-owner"] .username:before{
+	content:url("https://i.imgur.com/sBrbc3J.png");
+}
+li[class~="owner"] .username:before{
+	content:url("https://i.imgur.com/sBrbc3J.png");
+}
+li[class~="creator"] .username:before{
+	content:url("https://i.imgur.com/sBrbc3J.png");
+}
+/*hats*/
+li[class~="resident-dj"] .image_row:before{
+	content:"";
+	/*old hat*/
+	background:url("http://i.imgur.com/fm0VnAq.png");
+    /*new hat*/
+	background:url("https://i.imgur.com/A9ztY5I.png");
+	background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -35%;
+    top: -32%;
+}
+li[class~="vip"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/48J94QW.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -30%;
+    top: -32%;
+}
+li[class~="mod"] .image_row:before{
+	content:"";
+	/*old hat*/
+	background:url("http://i.imgur.com/kDIBFdp.png");
+	/*new hat*/
+	background:url("http://i.imgur.com/Q5vGMKw.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -33%;
+    top: -39%;
+}
+li[class~="manager"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/kDIBFdp.png");
+	/*new hat*/
+	background:url("http://i.imgur.com/XKqbhAs.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -33%;
+    top: -38%;
+}
+li[class~="admin"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/kDIBFdp.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -30%;
+    top: -32%;
+}
+li[class~="co-owner"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/kDIBFdp.png");
+	/*new hat*/
+	background:url("http://i.imgur.com/FFb2OJ7.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -33%;
+    top: -38%;
+}
+li[class~="owner"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/kDIBFdp.png");
+	/*new hat*/
+	background:url("http://i.imgur.com/FFb2OJ7.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -33%;
+    top: -38%;
+}
+li[class~="creator"] .image_row:before{
+	content:"";
+	background:url("http://i.imgur.com/kDIBFdp.png");
+	/*new hat*/
+	background:url("http://i.imgur.com/FFb2OJ7.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: -33%;
+    top: -38%;
+}
+/*===Colors===*/
+li[class~="resident-dj"] .username, li[class~="resident-dj"] .user-role, li[class~="resident-dj"] .dubs {
+    color: rgb(8, 136, 53) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 138, 36, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(0, 138, 36, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(0, 138, 36, 0.95));
+}
+li[class~="vip"] .username, li[class~="vip"] .user-role, li[class~="vip"] .dubs {
+    color: rgb(220, 216, 222) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(185, 185, 185, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(185, 185, 185, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(185, 185, 185, 0.95));
+}
+li[class~="mod"] .username, li[class~="mod"] .user-role, li[class~="mod"] .dubs {
+    color: rgb(170, 144, 189) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(255, 7, 213, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(4, 245, 223, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(255, 7, 213, 0.95));
+}
+li[class~="manager"] .username, li[class~="manager"] .user-role, li[class~="manager"] .dubs {
+    color: rgb(153, 220, 230) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(176, 212, 226, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(62, 158, 2, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(176, 212, 226, 0.95));
+}
+li[class~="admin"] .username, li[class~="admin"] .user-role, li[class~="admin"] .dubs {
+    color: rgb(189, 181, 144) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+}
+li[class~="co-owner"] .username, li[class~="co-owner"] .user-role, li[class~="co-owner"] .dubs {
+    color: rgb(189, 181, 144) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+}
+li[class~="owner"] .username, li[class~="owner"] .user-role, li[class~="owner"] .dubs {
+    color: rgb(189, 181, 144) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+}
+li[class~="creator"] .username, li[class~="creator"] .user-role, li[class~="creator"] .dubs {
+    color: rgb(189, 181, 144) !important;
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    -ms-filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+    filter: drop-shadow(0px 0px 4px rgba(123, 102, 43, 0.95));
+}
+/*li[class*="owner"] .username{
+	content:"";
+}*/
+/*==cause I am Me==*/
+li[class*="577db65440d9004200bd3d5d"] .image_row:before{
+    content: "";
+    background: url(https://cdn.betterttv.net/emote/58017bcc8faabf4b3d008456/2x);
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100%;
+    height: 103%;
+    position: absolute;
+    left: -5% !important;
+    top: -10px;
+}
+
+@media screen and (min-height: 41em) and (min-width: 72em){
+/*===player controller===*/
+#player-controller {
+    background: transparent;
+    overflow: visible;
+}
+#player-controller .right {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+}
+#player-controller .right .display-browser.remove-if-banned {
+    position: absolute;
+    right: 53%;
+    bottom: 72%;
+    padding: 0px;
+    margin: 0;
+    height: 51%;
+    width: 8%;
+    background: transparent;
+    z-index: 500;
+}
+#player-controller .right .display-browser.remove-if-banned .display-browser {
+    padding: 0;
+    margin: auto;
+    bottom: 0;
+    position: relative;
+    /* left: 10%; */
+}
+#player-controller .right .remove-if-banned.remove-if-iframe.display-block {
+    /* margin-right: 2%; */
+    left: 85.5%;
+    /* top: -3%; */
+    padding: 0;
+    float: left;
+    bottom: 14px;
+    position: relative;
+    width: 4%;
+    height: 80px;
+    z-index: 5000;
+}
+#player-controller .right ul .add-to-playlist-button:before {
+    content: url(https://i.imgur.com/whCuCmr.png);
+    /*background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 37%;*/
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 15%;
+}
+#player-controller .right ul .icon-heart {
+    visibility: hidden;
+    position: relative;
+    top: 3px;
+}
+#player-controller .right ul .dubup:before {
+    content: url(https://i.imgur.com/IPszT9X.png);
+    /*background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 37%;*/
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 15%;
+}
+#player-controller .right ul .dubup .icon-upvote {
+    visibility: hidden;
+}
+#player-controller .right ul .dubdown:before {
+    content: url(https://i.imgur.com/1yzKD1N.png);
+    /*background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: 37%;*/
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 15%;
+}
+#player-controller .right ul .dubdown .icon-downvote {
+    visibility: hidden;
+}
+#player-controller .right ul li .dubup.voted{
+	background:rgba(0,0,0,0) !important;
+	color:rgba(255,0,0,1) !important;
+    -webkit-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    -ms-filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+    filter: drop-shadow(0px 0px 12px rgba(4, 245, 223, 0.95));
+}
+
+#player-controller .right ul li .add-to-playlist-button.grabbed, #player-controller .right ul li .add-to-playlist-button.voted, #player-controller .right ul li .dubdown.grabbed, #player-controller .right ul li .dubdown.voted{
+	background:rgba(0,0,0,0) !important;
+	color:rgba(255,0,0,1) !important;
+}
+#player-controller .left {
+        position: absolute;
+    display: inline-block;
+    bottom: 50%;
+    top: auto;
+    left: 0px;
+    right: auto;
+    width: 53%;
+    height: 80px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+#player-controller .left ul {
+    height: 100%;
+}
+#player-controller .left ul .imgEl {
+    position: absolute;
+    width: 80px !important;
+    height: 80px !important;
+    /* height: auto; */
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+#player-controller .left .imgEl img {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+#player-controller .left .infoContainer {
+    padding-left: 79px !important;
+    margin: 0;
+    position: absolute;
+    display: inline-block;
+    /* left: 79px !important; */
+    height: 100% !important;
+    width: 100%;
+}
+#player-controller .left .infoContainerInner {
+    padding: 0 !important;
+    margin: 0;
+}
+#player-controller .left ul li.infoContainer .infoContainerInner .progressBg{
+    background:rgba(7, 230, 253,0.95);
+    height: 4px;
+    bottom: 1px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(5, 255, 105,78);
+    border-left: 0px;
+    border-radius: 4px;
+    -webkit-filter: drop-shadow(0px 0px 2px rgba(5, 255, 105,83));
+    -ms-filter: drop-shadow(0px 0px 2px rgba(5, 255, 105,83));
+    filter: drop-shadow(2px 0px 2px rgba(5, 255, 105,83));
+    box-shadow: 0 0 0 1px rgba(5, 255, 105,35);
+}
+#player-controller .left  .infoContainerInner .currentSong, #player-controller .left  .infoContainerInner .currentDJSong{
+    /* bottom: -1%; */
+    /* top: auto; */
+    width: 70% !important;
+    height: 35%;
+	margin-left:4px;
+    position: absolute;
+    display: inline-block;
+    background: transparent;
+}
+
+#player-controller .left .infoContainerInner .currentDJSong.creator {
+    position: absolute;
+    bottom: 50%;
+	height:30%;
+    vertical-align: bottom;
+}
+#player-controller .left .infoContainerInner .currentSong {
+    bottom: 15%;
+    /* top: 21%; */
+}
+#player-controller .left ul li.infoContainer .infoContainerInner .currentTime {
+    position: absolute;
+    bottom: 15%;
+    right: 1%;
+    top: auto;
+    height: 35%;
+    background: transparent;
+}
+
+/*===Un breaking >.<===*/
+#browser {
+    z-index: 5500;
+}
+#main-menu-right {
+    z-index: 500;
+}
+#addToPlaylistFloatContainer{
+	z-index: 550;
+}
+}
