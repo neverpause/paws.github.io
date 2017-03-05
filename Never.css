@@ -3,7 +3,7 @@
 #chat .chat-container .chat-messages .chat-main li {
 	line-height: inherit !important;
 }
-/* TinyandKawaii */
+/* start TinyandKawaii */
 .browser-content { margin-left:20px !important; }
 #chat .chat-container ul.chat-main li.user-56c057eaa23bb71d0001ac91  .stream-item-content .activity-row .username {
     color: #ffa500 !important;
@@ -22,6 +22,8 @@
     text-decoration: inherit;
     margin-right: 5px;
 }
+/* End tinyandkawaii */
+/* start paws */ 
 #chat .chat-container ul.chat-main li.user-56d545a245f02ad6041a4317 .stream-item-content .activity-row .username:before {
     content: "\f192";
     font-family: "foundation-icons";
@@ -35,7 +37,12 @@
     text-decoration: inherit;
     margin-right: 5px;
 }
-/* End tinyandkawaii */
+.browser-content { margin-left:20px !important; }
+#chat .chat-container ul.chat-main li.user-56d545a245f02ad6041a4317  .stream-item-content .activity-row .username  {
+    color: #ffbd01 !important;
+    text-shadow: 0px 0px 1px rgba(0,0,0,.5);
+}
+/* end paws */ 
 /* start laquett */
 #chat .chat-container ul.chat-main li.user-560a8df0b776b203001e6735 .stream-item-content .activity-row .username {
     background: linear-gradient(to right, #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000);
