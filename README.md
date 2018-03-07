@@ -1,4 +1,4 @@
-# neverpause.github.io
+# paws2.github.io
 Css Jagex are used as 
 - Jagex.css
 - Paws.css
