@@ -1,5 +1,9 @@
-@import url("https://ajmrly.github.io/stylesheets/lettucetrackretro.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css");
+
+/*
+ * Foundation Css v 3.0
+ * Made by Neverpause 2018 
+ * MIT License
+*/
 
 #chat .chat-container .chat-messages .chat-main li {
 	line-height: inherit !important;
